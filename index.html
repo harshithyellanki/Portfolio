@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Harshith Yellanki</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
   <header class="hero">
@@ -16,7 +16,7 @@
       <div class="social-links">
         <a href="https://github.com/davidjoseph" target="_blank"><i class="fab fa-github"></i></a>
         <a href="https://linkedin.com/in/davidjoseph" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:david.joseph@example.com"><i class="fas fa-envelope"></i></a>
+        <a href="mailto:david.joseph@ufl.edu"><i class="fas fa-envelope"></i></a>
       </div>
     </div>
   </header>
@@ -32,32 +32,46 @@
 
   <main class="container">
     <section id="about" class="section">
-      <!-- About section content -->
+      <h2 class="section-title">About</h2>
+      <p>This is the About section where you can introduce yourself.</p>
     </section>
 
     <section id="projects" class="section">
       <h2 class="section-title">Projects</h2>
       <div class="project-grid">
         <div class="project-card">
-          <h3>FPGA-based Convolution Accelerator</h3>
-          <p>Designed a hardware accelerator for FPGA-based convolution using a multiply-add pipeline.</p>
+          <h3>Parallelized Hardware Accelerator for 1-D Convolution on FPGA</h3>
+          <p>Developed and tested a hardware accelerator for 1-D time-domain convolution on the ZedBoard FPGA built around the Xilinx Zynq SoC.</p>
         </div>
-        <!-- Add more project cards as needed -->
+        <div class="project-card">
+          <h3>Design and Implementation of Static RAM</h3>
+          <p>Developed key components, including 6T SRAM cells, row and column decoders, sense amplifiers, precharge circuits, and write drivers.</p>
+        </div>
+        <div class="project-card">
+          <h3>Five-Staged Pipelined Processor Design - MIPS 32 Architecture</h3>
+          <p>Designed a five-stage pipelined processor as per the MIPS32 guidelines, including data path and control unit analysis, and hazard mitigation.</p>
+        </div>
+        <div class="project-card">
+          <h3>Design and Optimization of Finite-State Machine (FSM) with Custom Datapaths</h3>
+          <p>Developed and optimized FSMDs and custom FSMs with integrated datapaths for efficient bit counting and bit difference calculation in FPGA.</p>
+        </div>
+        <div class="project-card">
+          <h3>Advanced Functional Verification of FIFO using SystemVerilog</h3>
+          <p>Designed and implemented a self-checking SystemVerilog testbench for FIFO verification with automated execution and extensive verification coverage.</p>
+        </div>
       </div>
     </section>
 
     <section id="experience" class="section">
-      <!-- Experience section content -->
+      <h2 class="section-title">Experience</h2>
+      <p>Details about your work experience will go here.</p>
     </section>
 
     <section id="contact" class="section">
-      <!-- Contact section content -->
+      <h2 class="section-title">Contact</h2>
+      <p>You can reach me at <a href="mailto:david.joseph@ufl.edu">david.joseph@ufl.edu</a>.</p>
     </section>
   </main>
-
-  <footer>
-    <!-- Footer content -->
-  </footer>
 
   <script src="script.js"></script>
 </body>
