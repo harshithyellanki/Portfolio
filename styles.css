@@ -69,6 +69,21 @@
     margin: 0;
   }
   
+  .sticky-nav ul li {
+    list-style: none;
+  }
+  
+  .sticky-nav ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+    transition: color 0.3s;
+  }
+  
+  .sticky-nav ul li a:hover {
+    color: var(--primary-color);
+  }
+  
   .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -99,13 +114,18 @@
     margin-bottom: 3rem;
   }
   
-  /* Add media queries for responsiveness */
+  /* Media queries for responsiveness */
   @media (max-width: 768px) {
     .hero-title {
       font-size: 3rem;
     }
-    
+  
     .sticky-nav ul {
       gap: 1rem;
     }
+  
+    .project-card {
+      padding: 1.5rem;
+    }
   }
+  
