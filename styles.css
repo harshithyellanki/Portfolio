@@ -4,70 +4,59 @@ body {
     padding: 0;
     background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
     color: #ffffff;
-}
-
-header {
+  }
+  
+  header {
     background: #001f3f;
     padding: 20px;
     text-align: center;
-    font-size: 1.5em;
-    animation: flicker 1.5s infinite alternate;
-}
-
-@keyframes flicker {
-    0% { opacity: 1; }
-    100% { opacity: 0.8; }
-}
-
-nav ul {
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  header p {
+    font-size: 1.2em;
+  }
+  
+  nav ul {
     list-style-type: none;
     padding: 0;
-}
-
-nav ul li {
+  }
+  
+  nav ul li {
     display: inline;
     margin: 0 15px;
-}
-
-nav a {
+  }
+  
+  nav a {
     color: #00eaff;
     text-decoration: none;
-    transition: color 0.3s;
-}
-
-nav a:hover {
+  }
+  
+  nav a:hover {
     color: #ffcc00;
-}
-
-.animated-section {
+  }
+  
+  .animated-section {
     margin: 50px auto;
     padding: 20px;
     max-width: 800px;
     border-radius: 10px;
     background: rgba(0,0,0,0.6);
-    box-shadow: 0px 0px 20px rgba(255,255,255,0.3);
-    transform: scale(0.95);
-    transition: transform 0.5s ease-in-out;
-}
-
-.animated-section:hover {
-    transform: scale(1.02);
-}
-
-.project, .experience-item {
+  }
+  
+  .project, .experience-item {
     padding: 15px;
     background: #003366;
-    border-left: solid #00eaff;
-    margin-top: 20px;
-}
-
-.project:hover, .experience-item:hover {
-   transform: translateY(-5px);
-   transition: transform 0.3s ease-in-out; /* Fixed */
-}
-
-footer {
-    margin-top: 20px;
-    padding: 10px;
-    background: #001f3f;
-}
+  }
+  
+  .project:hover, .experience-item:hover {
+     transform: translateY(-5px);
+     transition transform ease-in-out .3s;
+  }
+  
+  footer {
+     background-color:#001f
+  
