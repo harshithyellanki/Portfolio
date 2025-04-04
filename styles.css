@@ -149,6 +149,17 @@
     color: var(--primary-color);
     margin-bottom: 3rem;
   }
+
+  p {
+    max-width: 800px;
+    margin: 0 auto 1rem auto;
+    text-align: justify;
+    line-height: 1.6;
+  }
+  ul {
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+  }
   
   @media (max-width: 768px) {
     .hero-title {
