@@ -82,7 +82,12 @@
     margin: 0;
   }
 
-  .nav-button, .section-btn {
+  .nav-button, .nav-button a {
+    text-decoration: none; /* Remove underline */
+}
+
+/* Button styling */
+.nav-button {
     padding: 10px 20px;
     background-color: var(--primary-color);
     color: #0a192f;
@@ -94,7 +99,24 @@
     transition: background-color 0.3s;
 }
 
-.nav-button:hover, .section-btn:hover {
+.nav-button:hover {
+    background-color: #45d8ad;
+}
+
+/* Section button styling */
+.section-btn {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: #0a192f;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.section-btn:hover {
     background-color: #45d8ad;
 }
   
