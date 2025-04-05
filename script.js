@@ -1,7 +1,7 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Smooth scroll for navigation
+document.addEventListener("DOMContentLoaded", function () {
+    // Smooth scroll
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
+      anchor.addEventListener('click', function (e) {
         e.preventDefault();
         document.querySelector(this.getAttribute('href')).scrollIntoView({
           behavior: 'smooth'
@@ -24,6 +24,15 @@ document.addEventListener("DOMContentLoaded", function() {
       section.style.transform = 'translateY(20px)';
       section.style.transition = 'all 0.6s ease-out';
       observer.observe(section);
+    });
+  
+    // Dark/Light Mode Toggle
+    const themeToggle = document.getElementById("themeToggle");
+    const body = document.body;
+  
+    themeToggle.addEventListener("click", () => {
+      body.classList.toggle("light-mode");
+      themeToggle.textContent = body.classList.contains("light-mode") ? "🌞" : "🌙";
     });
   });
   
