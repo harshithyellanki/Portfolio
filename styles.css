@@ -22,6 +22,15 @@ body.light-mode {
   color: var(--light-mode-text);
 }
 
+body.invert-mode {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+body.invert-mode img,
+body.invert-mode video {
+  filter: invert(1) hue-rotate(180deg);
+}
+
 .hero {
   min-height: 100vh;
   display: flex;
