@@ -6,7 +6,6 @@
   --text-color: #ccd6f6;
   --light-mode-bg: #f5f5f5;
   --light-mode-text: #1a1a1a;
-  --black-text: #000; /* For inverted text */
 }
 
 body {
@@ -21,20 +20,6 @@ body {
 body.light-mode {
   background-color: var(--light-mode-bg);
   color: var(--light-mode-text);
-}
-
-body.invert-mode {
-  background-color: var(--light-mode-bg); /* Ensure background is light */
-  color: var(--black-text); /* Ensure text becomes black */
-}
-
-body.invert-mode img,
-body.invert-mode video {
-  filter: invert(1) hue-rotate(180deg); /* Invert images */
-}
-
-body.invert-mode .project-card p {
-  color: var(--black-text); /* Ensure text is black in project cards */
 }
 
 .hero {
@@ -149,7 +134,6 @@ p {
   text-align: justify;
   line-height: 1.6;
 }
-
 ul {
   max-width: 800px;
   margin: 0 auto 2rem auto;
