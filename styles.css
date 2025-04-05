@@ -31,6 +31,19 @@ body.invert-mode video {
   filter: invert(1) hue-rotate(180deg);
 }
 
+body.invert-mode .project-card p {
+  color: #000; /* Ensure text is dark enough in invert mode */
+}
+
+body.invert-mode .nav-button {
+  background-color: #ff6347; /* New button color in invert mode */
+  color: #fff; /* Light color text on buttons */
+}
+
+body.invert-mode .nav-button:hover {
+  background-color: #ff4500; /* Button hover color in invert mode */
+}
+
 .hero {
   min-height: 100vh;
   display: flex;

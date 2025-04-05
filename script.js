@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       });
     });
-  
+
     // Section animations
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -18,22 +18,20 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
     }, { threshold: 0.1 });
-  
+
     document.querySelectorAll('.section').forEach((section) => {
       section.style.opacity = 0;
       section.style.transform = 'translateY(20px)';
       section.style.transition = 'all 0.6s ease-out';
       observer.observe(section);
     });
-  
+
    // Invert Color Mode Toggle
    const themeToggle = document.getElementById("themeToggle");
    const body = document.body;
- 
+
    themeToggle.addEventListener("click", () => {
      body.classList.toggle("invert-mode");
      themeToggle.textContent = body.classList.contains("invert-mode") ? "🌞" : "🌙";
    });
- 
-  });
-  
+ });
