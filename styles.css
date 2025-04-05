@@ -6,6 +6,7 @@
   --text-color: #ccd6f6;
   --light-mode-bg: #f5f5f5;
   --light-mode-text: #1a1a1a;
+  --black-text: #000; /* For inverted text */
 }
 
 body {
@@ -23,25 +24,17 @@ body.light-mode {
 }
 
 body.invert-mode {
-  filter: invert(1) hue-rotate(180deg);
+  background-color: var(--light-mode-bg); /* Ensure background is light */
+  color: var(--black-text); /* Ensure text becomes black */
 }
 
 body.invert-mode img,
 body.invert-mode video {
-  filter: invert(1) hue-rotate(180deg);
+  filter: invert(1) hue-rotate(180deg); /* Invert images */
 }
 
 body.invert-mode .project-card p {
-  color: #000; /* Ensure text is dark enough in invert mode */
-}
-
-body.invert-mode .nav-button {
-  background-color: #ff6347; /* New button color in invert mode */
-  color: #fff; /* Light color text on buttons */
-}
-
-body.invert-mode .nav-button:hover {
-  background-color: #ff4500; /* Button hover color in invert mode */
+  color: var(--black-text); /* Ensure text is black in project cards */
 }
 
 .hero {
@@ -156,6 +149,7 @@ p {
   text-align: justify;
   line-height: 1.6;
 }
+
 ul {
   max-width: 800px;
   margin: 0 auto 2rem auto;
